@@ -10,7 +10,7 @@ def load_img(path):
     dim = (500, int((h*500)/w))
     return image.resize(dim)
 
-learn = load_learner_('export.pkl')
+learn = load_learner_('exportbirdident.pkl')
 
 st.markdown("# Animal Classifier")
 st.markdown("Upload an image and the classifier will tell you whether its a horse, dog or bear.")
