@@ -11,9 +11,9 @@ def load_img(path):
     return image.resize(dim)
 
 learn = load_learner_('exportbirdident.pkl')
-
-st.markdown("# Animal Classifier")
-st.markdown("Upload an image and the classifier will tell you whether its a horse, dog or bear.")
+st.markdown("# Created By Pankaj")
+st.markdown("# Bird Identifier")
+st.markdown("Upload an image and the classifier will tell you whether its a Crow, Parrot, Peacock, Toucans or Old World Sparrow.")
 
 file_bytes = st.file_uploader("Upload a file", type=("png", "jpg", "jpeg", "jfif"))
 if file_bytes:
